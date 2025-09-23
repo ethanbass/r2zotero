@@ -3,6 +3,9 @@
 #' Send citations from the \code{\link{citation}} function directly to Zotero
 #' library through the Zotero JSON web API.
 #'
+#' As with Zotero browser plugins, the Zotero desktop application must be
+#' running for the function to work.
+#'
 #' @importFrom utils citation
 #' @param pkg Package to cite.
 #' @param manual_as_document Whether to export \code{MANUAL} bibtex entries as
