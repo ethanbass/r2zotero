@@ -221,6 +221,12 @@ parse_single_name <- function(name_string, creator_type = "author") {
 
   name_string <- trimws(name_string)
 
+  if (name_string == "R Core Team"){
+    return(list(
+      creatorType = creator_type,
+      name = name_string
+    ))
+  }
   # Try to detect if name is in "Last, First" format
   if (grepl(",", name_string)) {
     parts <- unlist(strsplit(name_string, ",", fixed = TRUE))
