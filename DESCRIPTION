@@ -1,0 +1,25 @@
+Package: r2zotero
+Type: Package
+Title: Send suggested citations from R directly to Zotero
+Version: 0.1.0
+Authors@R: c(
+    person("Ethan", "Bass", , "ethanbass@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6175-6739"))
+  )
+Maintainer: Ethan Bass <ethanbass@gmail.com>
+Description: Uses the Zotero JSON web API to send citations from the 'CITATION'
+    file directly to a local Zotero library.
+License: MIT + file LICENSE
+URL: https://github.com/ethanbass/r2zotero/
+BugReports: https://github.com/ethanbass/r2zotero/issues/
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    bib2df,
+    dplyr,
+    httr,
+    jsonlite,
+    stringi,
+    stringr
+RoxygenNote: 7.3.3
