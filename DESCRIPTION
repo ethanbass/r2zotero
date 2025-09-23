@@ -7,8 +7,8 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-6175-6739"))
   )
 Maintainer: Ethan Bass <ethanbass@gmail.com>
-Description: Uses the Zotero JSON web API to send citations from the 'CITATION'
-    file directly to a local Zotero library.
+Description: Facilitates the citation of R packages by importing citations from 
+    'CITATION' file directly to a local Zotero library using the Zotero Web API.
 License: MIT + file LICENSE
 URL: https://github.com/ethanbass/r2zotero/
 BugReports: https://github.com/ethanbass/r2zotero/issues/
