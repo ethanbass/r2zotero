@@ -16,7 +16,8 @@ bib2zot_df <- function(bib, manual_as_document = FALSE){
   manual_as <- ifelse(manual_as_document, "manuscript", "computerProgram")
   what <- switch(what, "MANUAL" = manual_as,
                 "BOOK" = "book",
-                "ARTICLE" = "journalArticle")
+                "ARTICLE" = "journalArticle",
+                "INCOLLECTION" = "book")
   df_renamed <- df |>
     dplyr::rename(
       dplyr::any_of(
@@ -207,7 +208,7 @@ create_creators_list <- function(authors = NULL, editors = NULL) {
   if (length(editors) == 1 && is.na(editors)){
     editors <- NULL
   } else{
-    editors <- lapply(editors, parse_single_name)
+    editors <- lapply(editors, parse_single_name, creator_type = "editor")
   }
   creators <- c(authors,editors)
   return(creators)
