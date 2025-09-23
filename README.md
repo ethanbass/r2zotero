@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
   [![Last commit](https://img.shields.io/github/last-commit/ethanbass/r2zotero)]()
+  [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/emersion/stability-badges#experimental)
 <!-- badges: end -->
 
 The goal of **r2zotero** is to facilitate citation of R packages by importing citations from an 
