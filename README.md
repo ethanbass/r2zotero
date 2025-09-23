@@ -19,7 +19,7 @@ pak::pak("ethanbass/r2zotero")
 
 ## Example
 
-To send a citation to r2zotero
+To send a citation to Zotero:
 
 ``` r
 library(r2zotero)
