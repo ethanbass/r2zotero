@@ -21,7 +21,7 @@
 r2zotero <- function(pkg = "base", manual_as_document = FALSE, verbose=TRUE) {
   zotero_is_running <- zotero_running()
   if (!zotero_is_running){
-    stop()
+    stop("Unable to communicate with the Zotero desktop application. Please make sure Zotero is open and try again.")
   }
   schema <- get_zotero_schema()
   cit <- citation(pkg)
