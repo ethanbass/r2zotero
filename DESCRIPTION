@@ -1,6 +1,6 @@
 Package: r2zotero
 Type: Package
-Title: Send suggested citations from R directly to Zotero
+Title: Send Suggested R Package Citations Directly to Zotero
 Version: 0.1.0
 Authors@R: c(
     person("Ethan", "Bass", , "ethanbass@gmail.com", role = c("aut", "cre"),
