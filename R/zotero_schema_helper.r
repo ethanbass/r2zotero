@@ -59,6 +59,7 @@ bib2zot_df <- function(bib, manual_as_document = FALSE){
   df_clean <- df_renamed[colnames(df_renamed) %in% c("itemType", fields, "creators")]
   df_clean[which(is.na(df_clean))] <- ""
   df_clean$title <- gsub("[{}]", "", df_clean$title)
+  df_clean$publicationTitle <- gsub("[{}]", "", df_clean$publicationTitle)
   df_clean
 }
 
