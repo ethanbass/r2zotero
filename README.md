@@ -6,9 +6,8 @@
   [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/emersion/stability-badges#experimental)
 <!-- badges: end -->
 
-The goal of **r2zotero** is to facilitate citation of R packages by importing citations from an 
-R package's 'CITATION' file directly to a local [Zotero](https://www.zotero.org/) 
-library using the [Zotero Web API](https://www.zotero.org/support/dev/web_api/v3/start).
+**R2zotero** aims to facilitate citation of R packages by importing citations from an R package's 'CITATION' file directly to a local [Zotero](https://www.zotero.org/) 
+library using the [Zotero Web API](https://www.zotero.org/support/dev/web_api/v3/start). 
 
 ## Installation
 
