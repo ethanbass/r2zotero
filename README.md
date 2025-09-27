@@ -7,9 +7,8 @@
   [![r-universe status badge](https://ethanbass.r-universe.dev/badges/r2zotero)](https://ethanbass.r-universe.dev/r2zotero)
 <!-- badges: end -->
 
-The goal of **r2zotero** is to facilitate citation of R packages by importing citations from an 
-R package's 'CITATION' file directly to a local [Zotero](https://www.zotero.org/) 
-library using the [Zotero Web API](https://www.zotero.org/support/dev/web_api/v3/start).
+**R2zotero** aims to facilitate citation of R packages by importing citations from an R package's 'CITATION' file directly to a local [Zotero](https://www.zotero.org/) 
+library using the [Zotero Web API](https://www.zotero.org/support/dev/web_api/v3/start). 
 
 ## Installation
 
