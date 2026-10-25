@@ -24,7 +24,7 @@ download_schema_data <- function(verbose = getOption("verbose")) {
                           httr::add_headers("Accept-Encoding" = "gzip"))
 
     if (httr::status_code(response) == 200) {
-      .zotero_schema <<- httr::content(response, "parsed")
+      .zotero_schema <- httr::content(response, "parsed")
       names(.zotero_schema$itemTypes) <- get_valid_item_types(.zotero_schema)
       if (verbose){
         message("Schema downloaded successfully (version: ", .zotero_schema$version, ")")

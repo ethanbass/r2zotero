@@ -2,7 +2,7 @@
 # r2zotero
 
 <!-- badges: start -->
-  [![Last commit](https://img.shields.io/github/last-commit/ethanbass/r2zotero)]()
+  [![Last commit](https://img.shields.io/github/last-commit/ethanbass/r2zotero)](https://github.com/ethanbass/r2zotero/)
   [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/emersion/stability-badges#experimental)
   [![r-universe status badge](https://ethanbass.r-universe.dev/badges/r2zotero)](https://ethanbass.r-universe.dev/r2zotero)
 <!-- badges: end -->

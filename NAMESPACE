@@ -2,4 +2,3 @@
 
 export(r2zotero)
 importFrom(utils,citation)
-importFrom(utils,toBibtex)

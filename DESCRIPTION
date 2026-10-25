@@ -1,7 +1,7 @@
 Package: r2zotero
 Type: Package
 Title: Send Suggested R Package Citations Directly to Zotero
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person("Ethan", "Bass", , "ethanbass@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6175-6739"))
@@ -16,10 +16,7 @@ Depends: R (>= 4.1.0)
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    bib2df,
-    dplyr,
     httr,
     jsonlite,
-    stringi,
-    stringr
-RoxygenNote: 7.3.3
+    stringi
+Config/roxygen2/version: 8.1.1
