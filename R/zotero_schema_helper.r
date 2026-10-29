@@ -72,7 +72,7 @@ bibentry_to_zotero <- function(cit, manual_as_document = FALSE){
                                         creator_types = get_valid_creator_types(schema, what))
   fields <- get_valid_fields(schema, item_type = what)
   item <- item[names(item) %in% c("itemType", fields, "creators")]
-  if (!is.null(item$title)) item$title <- gsub("[{}]", "", item$title)
+  if (!is.null(item$title)) item$title <- gsub("[{}]", "", latex_to_unicode(item$title))
   item
 }
 

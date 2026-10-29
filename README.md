@@ -1,5 +1,5 @@
 
-# r2zotero
+# r2zotero <img src="man/figures/logo.png" align="right" height="139" alt="r2zotero hex logo: an engraved card-catalog drawer labelled R–Z" />
 
 <!-- badges: start -->
   [![Last commit](https://img.shields.io/github/last-commit/ethanbass/r2zotero)](https://github.com/ethanbass/r2zotero/)
@@ -34,3 +34,19 @@ library(r2zotero)
 r2zotero("lattice")
 ```
 
+To cite several packages at once, pass a vector of names. To skip citations already in your Zotero library, add `skip_duplicates = TRUE`. This needs Zotero's local API, which you can turn on under Settings > Advanced > Allow other applications on this computer to communicate with Zotero.
+
+``` r
+# every attached package
+r2zotero(names(sessionInfo()$otherPkgs))
+
+# the packages a project's code loads
+r2zotero(renv::dependencies()$Package)
+
+# every package in an renv lockfile, including indirect dependencies
+r2zotero(names(jsonlite::read_json("renv.lock")$Packages))
+```
+
+## Logo
+
+The card catalog in the logo is an engraving from James Duff Brown's *Manual of Library Classification and Shelf Arrangement* (1898), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_(1898).jpg).

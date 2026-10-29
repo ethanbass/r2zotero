@@ -1,3 +1,13 @@
+# r2zotero 0.3.0
+
+## New features
+
+* `r2zotero()` now accepts a vector of package names, such as `names(sessionInfo()$otherPkgs)`. Packages that aren't installed are skipped with a warning.
+
+* `r2zotero(skip_duplicates = TRUE)` skips citations already in your Zotero library. It needs Zotero's local API; see `?r2zotero`.
+
+* `r2zotero()` now accepts any `bibentry` object, such as one built with `bibentry()` or combined with `c()`.
+
 # r2zotero 0.2.0
 
 ## Breaking changes

@@ -1,7 +1,7 @@
 Package: r2zotero
 Type: Package
 Title: Send Suggested R Package Citations Directly to Zotero
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
     person("Ethan", "Bass", , "ethanbass@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6175-6739"))
@@ -19,4 +19,7 @@ Imports:
     httr,
     jsonlite,
     stringi
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
 Config/roxygen2/version: 8.1.1
